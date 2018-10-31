@@ -1,0 +1,42 @@
+# Program1
+#include "iostream"
+#include "cstdlib"
+using namespace std;
+
+double const txmulta = 0.02;
+// função de leitura
+
+double lerPress ( ) 
+{ double val;
+cout << "Digite o valor da prestação:";
+cin >> val; return val; 
+}
+//função para calcular a multa
+double calcMulta (double val)
+{ return ( val* txmulta ); }
+	
+// tipo void para mostrar o valor final
+void mostrar (double val, double multa) {
+	
+double valatual = val + multa;
+cout<<"Valor a pagar:"<< valatual<< endl ;}
+
+int main(){
+ setlocale(LC_ALL,"Portuguese");
+ double valor, multa; int tecla;
+cout<<"*-----------Menu-----------*\n 1 Executar\n 2 Sair\n-----------\nItem: ";
+cin>> tecla;
+
+switch(tecla)
+{ 
+case 1: valor = lerPress();
+multa = calcMulta(valor);
+mostrar (valor, multa);
+break;
+
+case 2: cout << "\nFim do programa!\n";
+system("pause"); exit(0);
+break;
+} 
+return 0; 
+}
