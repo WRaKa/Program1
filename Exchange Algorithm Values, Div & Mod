@@ -1,0 +1,65 @@
+#Programa 2
+#include <iostream>
+#include <stdlib.h>
+#include <math.h>
+using namespace std;
+
+int main () { setlocale(LC_ALL, "Portuguese");
+int A,B,C,D; int tecla;
+
+cout << "\nMenu\n1 Executar\n2 Finalizar\nItem:";
+cin >> tecla;
+
+switch(tecla) {
+	
+case 1: {cout << "\nDigite A:"; cin >> A;
+cout << "\nDigite B:"; cin >> B;
+cout << "\nDigite C:"; cin >> C;
+cout << "\nDigite D:"; cin >> D;
+
+if ( A % 2 == 0 && A % 3 == 0 )
+{ 
+cout<< "\n A é divisível por 2 e por 3! \n Portanto, 2 e 3 são múltiplos de " << A; 
+}
+else
+{ 
+cout << "\n A não é divisivel por 2 e por 3!"<<A; 
+}
+if  ( B % 2 == 0 && B % 3 == 0 )
+{ 
+cout<< "\n B é divisível por 2 e por 3! \n Portanto, 2 e 3 são múltiplos de " << B; 
+}
+else
+{ 
+cout << "\n B não é divisivel por 2 e por 3!"<<B; 
+}
+if ( C % 2 == 0 && C % 3 == 0 )
+{ 
+cout<< "\n C é divisível por 2 e por 3! \n Portanto, 2 e 3 são múltiplos de " << C; 
+}
+else
+{ 
+cout << "\n C não é divisivel por 2 e por 3!"<<C; 
+}
+if ( D % 2 == 0 && D % 3 == 0 )
+{ 
+cout<< "\n D é divisível por 2 e por 3! \n Portanto, 2 e 3 são múltiplos de " << D; 
+}
+else
+{ 
+cout << "\n D não é divisivel por 2 e por 3!"<<D; 
+}
+{
+break;	
+}	
+
+case 2: {cout << "Fim do Programa!";
+
+system("pause");exit(0); 
+break;
+}
+	system("pause");
+	return 0; 
+}
+}
+}
